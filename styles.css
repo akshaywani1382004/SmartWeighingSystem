@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.connection-status {
+  margin-top: 20px;
+  padding: 11px;
+  margin-bottom: -62px;
+  font-size: 14px;
+  text-align: right;
+}
+
+#connectionStatus {
+  font-weight: bold;
+  color: rgb(255, 62, 62); 
+}
+
+.blue-box {
+  background-color: #0f9cfd;
+  height: 60px; 
+  width: 100%;
+  border-radius: 4px;
+}
+
+.title {
+  margin: 10px 20px; 
+  font-size: 26px;
+  color: rgb(255, 255, 255); 
+  text-align: left;
+  margin-top: -44px;
+}
+
+header {
+  background-color: #0f9cfd;
+  color: white;
+  padding: 10px 0;
+  text-align: start;
+}
+
+.current-measurements {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.current-measurements h2 {
+  margin-top: 2px;
+}
+
+.total-weight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.total-weight-label {
+  color: black;
+  font-size: 15px;
+}
+
+.total-weight-value {
+  color: #0f9cfd;
+  font-size: 1.8em;
+  margin-top: -17px; 
+}
+
+
+.load-cells {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 30px;
+}
+
+.load-cell {
+  flex: 1;
+  text-align: center;
+  background: #f7fbff;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  border: 1px solid #b9b9b9;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.cell-name {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.cell-value {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0f9cfd;
+}
+
+.weight-distribution {
+  margin: 0px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.weight-distribution h2 {
+  margin-top: 5px;
+}
+
+.chart {
+  width: 300px;
+  height: 300px; 
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;  
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 22px; 
+    text-align: center; 
+    margin-top: -35px;
+  }
+
+  .connection-status {
+    text-align: right; 
+    font-size: 12px; 
+    margin-bottom: 1px;
+    margin-top: -5px;
+  }
+
+  .current-measurements{
+    margin-top: -4px;
+    font-size: 13px;
+  }
+
+  .current-measurements h2 {
+    margin-top:-5px;
+  }
+
+  .total-weight-label {
+    color: black;
+    font-size: 12px;
+    margin-top: -14px;
+    margin-bottom: 5px;
+  }
+
+  .load-cells {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .load-cell {
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .chart {
+    width: 100%;  
+    height: 250px; 
+  }
+
+  .total-weight-value {
+    font-size: 1.5em;
+  }
+
+  .blue-box {
+    height: 50px;
+  }
+}

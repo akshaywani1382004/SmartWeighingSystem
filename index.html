@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Weighing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blue-box"></div>
+        <h1 class="title">Smart Weighing System</h1>
+
+        <div class="connection-status">
+            <span>Status: <strong id="connectionStatus" style="color: red;">Not Connected..!</strong></span>
+        </div>
+
+        <section class="current-measurements">
+            <h2>Current Weight Measurements</h2>
+            <div class="total-weight">
+                <span class="total-weight-label">Total System Weight:</span>
+                <br>
+                <span class="total-weight-value"><strong id="totalWeight">0.00 kg</strong></span>
+            </div>            
+            <div class="load-cells">
+                <div class="load-cell">
+                    <span class="cell-name"><strong>Load Cell 1</strong></span>
+                    <span class="cell-value" id="loadCell1">0 kg</span>
+                </div>
+                <div class="load-cell">
+                    <span class="cell-name"><strong>Load Cell 2</strong></span>
+                    <span class="cell-value" id="loadCell2">0 kg</span>
+                </div>
+                <div class="load-cell">
+                    <span class="cell-name"><strong>Load Cell 3</strong></span>
+                    <span class="cell-value" id="loadCell3">0 kg</span>
+                </div>
+                <div class="load-cell">
+                    <span class="cell-name"><strong>Load Cell 4</strong></span>
+                    <span class="cell-value" id="loadCell4">0 kg</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="weight-distribution">
+            <h2>Weight Distribution</h2>
+            <div class="chart">
+                <canvas id="weightChart"></canvas>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
